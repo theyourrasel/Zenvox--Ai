@@ -1,0 +1,36 @@
+# FILE PATH: .env.example
+# ============================================================================
+# ZENVOX AI — ENVIRONMENT CONFIGURATION TEMPLATE
+# Copy this file to .env for local use, or add these keys in Render Dashboard
+# ============================================================================
+
+PORT=3000
+NODE_ENV=production
+ALLOWED_ORIGINS=*
+
+# --- SECURITY & JWT AUTHENTICATION ---
+JWT_SECRET=zenvox_pro_ultra_secure_jwt_secret_key_2026
+ADMIN_EMAIL=admin@zenvox.ai
+ADMIN_INITIAL_PASSWORD=ZenvoX@Admin2026
+
+# --- AI PROVIDER API KEYS (Configure at least GEMINI_API_KEY) ---
+GEMINI_API_KEY=your_google_gemini_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here
+ANTHROPIC_API_KEY=your_anthropic_claude_api_key_here
+
+# --- OPTIONAL VIDEO GENERATION API ---
+VIDEO_GEN_API_KEY=your_video_api_key_here
+
+# --- OCR & MODEL DEFAULTS ---
+ENABLE_LOCAL_OCR=true
+OCR_LANGUAGES=eng+ben
+DEFAULT_PROVIDER=gemini
+DEFAULT_MODEL=gemini-2.5-flash
+
+# --- COST & RATE LIMIT CONTROLS ---
+RATE_LIMIT_WINDOW_MS=60000
+RATE_LIMIT_MAX_REQUESTS=35
+MAX_FILE_SIZE_MB=15
+MAX_FILES_PER_MESSAGE=5
+REQUEST_TIMEOUT_MS=60000
+DAILY_TOKEN_BUDGET=500000

@@ -1,0 +1,9 @@
+# FILE PATH: .gitignore
+node_modules/
+.env
+.env.local
+.env.*.local
+data/
+uploads/
+*.log
+.DS_Store
